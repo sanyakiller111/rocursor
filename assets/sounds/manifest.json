@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "license": "CC0-1.0",
+  "items": [
+    {
+      "id": "death-low-down",
+      "name": "Падение тона",
+      "role": "death",
+      "file": "death/death-low-down.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "6ff9df34a95614a5ad0b9b675a511c4a8152ff9540e91f7e7abc56db5ee03c97"
+    },
+    {
+      "id": "death-three-tone",
+      "name": "Три тона вниз",
+      "role": "death",
+      "file": "death/death-three-tone.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "c70af4d25dc7d36b1d566adbdc2f16c51c96afbbfbac09a52385c019ecd52ef9"
+    },
+    {
+      "id": "death-zap-down",
+      "name": "Ретро-взрыв",
+      "role": "death",
+      "file": "death/death-zap-down.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "141dce222f19df84a4bde3a6e95394802a6906be4a1a751db83fb6d7de531a2f"
+    },
+    {
+      "id": "death-zap-two",
+      "name": "Электро-писк",
+      "role": "death",
+      "file": "death/death-zap-two.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "55e099641f34e4cc18c524277a39f476043680f5cf072687971a07eabb6ae5b3"
+    },
+    {
+      "id": "death-space-trash",
+      "name": "Космический мусор",
+      "role": "death",
+      "file": "death/death-space-trash.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "425eaa41b3bc7aa9c0042a15277612121749602a33a5a2eedb241c184f4d67ea"
+    },
+    {
+      "id": "death-glitch",
+      "name": "Глитч",
+      "role": "death",
+      "file": "death/death-glitch.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "bcafe18bd27f87fba99bc497841fcc1f05e79300cf240998f96c510948caccdf"
+    },
+    {
+      "id": "death-error",
+      "name": "Ошибка",
+      "role": "death",
+      "file": "death/death-error.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "519f31356698ae2c5b38c9769c3d275db5b120aa54d2009215ef0b698a7c71df"
+    },
+    {
+      "id": "death-punch",
+      "name": "Удар кулаком",
+      "role": "death",
+      "file": "death/death-punch.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "891671f5b8365921867dc5a1ea8df5f485285d5493a6333eb0fa31431bff1072"
+    },
+    {
+      "id": "death-thud",
+      "name": "Глухой шлепок",
+      "role": "death",
+      "file": "death/death-thud.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "cd9593927ed8d47300eac202e6cfa1c41220a254debea739836e9b5895c3f5e5"
+    },
+    {
+      "id": "death-glass",
+      "name": "Звон стекла",
+      "role": "death",
+      "file": "death/death-glass.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "f4b4fde77f6d7a8bf6c38abb1054561c5d1728122e618021027ff7599d9b525c"
+    },
+    {
+      "id": "death-metal",
+      "name": "Металлический лязг",
+      "role": "death",
+      "file": "death/death-metal.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "bd8aec10891dd510e9d2f44b2e2d655290c5b0e5803c0e977722a52e5f02ddcb"
+    },
+    {
+      "id": "death-bell",
+      "name": "Колокол",
+      "role": "death",
+      "file": "death/death-bell.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "f8a78ab442e21514c3c47ca93231ed956b8a37a4e47a08ada9e1770fa2a61821"
+    },
+    {
+      "id": "death-tin",
+      "name": "Жестяной бренчок",
+      "role": "death",
+      "file": "death/death-tin.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "f5fa76ff3f0c125e310d6bdddcb35c802ab5db1e1bbea9e1cdabef19247ed01f"
+    },
+    {
+      "id": "jump-pep-1",
+      "name": "Пружинка",
+      "role": "jump",
+      "file": "jump/jump-pep-1.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "303eb72c9ccb39594c72f7b6fcf6cf90a1b7d8669097fa3f581e1af8176c7151"
+    },
+    {
+      "id": "jump-pep-2",
+      "name": "Боинг",
+      "role": "jump",
+      "file": "jump/jump-pep-2.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "88c4f63f28fb1e93b6a155e46f386d4ca7c09644ae648d8d8e2b980b1a89d70b"
+    },
+    {
+      "id": "jump-phase",
+      "name": "Фазовый прыжок",
+      "role": "jump",
+      "file": "jump/jump-phase.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "410482f88056dfa1c733a3ad46dba1342e23b9a8c8ede902244858c8e3a660e7"
+    },
+    {
+      "id": "jump-phaser-up",
+      "name": "Взлёт",
+      "role": "jump",
+      "file": "jump/jump-phaser-up.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "281a65c04e096e56e9e5772abc29d2d5f68254a41af9a317911e0b4b8d0a40d9"
+    },
+    {
+      "id": "land-soft",
+      "name": "Мягкая посадка",
+      "role": "land",
+      "file": "land/land-soft.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "1f3df2fbc2ab562203d1d9cb8773c799313655cb1b5978ddb9ede273cee0406b"
+    },
+    {
+      "id": "land-wood",
+      "name": "Деревянный стук",
+      "role": "land",
+      "file": "land/land-wood.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "e322f07e19bc2bd8a3a8bc4729515b705e8f56e03c5b4d0051bea2f7c9e5954f"
+    },
+    {
+      "id": "land-plate",
+      "name": "Железная плита",
+      "role": "land",
+      "file": "land/land-plate.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "30fe7005d9c0ac62bf63dfb39cf860561d283c3a7a441e4d5c73ea00de57367d"
+    },
+    {
+      "id": "land-generic",
+      "name": "Лёгкий шлепок",
+      "role": "land",
+      "file": "land/land-generic.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "613c7d095a05fc0e2d37545020b35b4f08aad8c9271a4a49bb216ffdc9f282dc"
+    },
+    {
+      "id": "step-concrete",
+      "name": "Шаги: бетон",
+      "role": "footsteps",
+      "file": "footsteps/step-concrete.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "fa5e4a0b0a5ac5bb33e5625aafe72c9eeb696bb5cd2ea803af9c7259961a7676"
+    },
+    {
+      "id": "step-grass",
+      "name": "Шаги: трава",
+      "role": "footsteps",
+      "file": "footsteps/step-grass.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "af0296e8644fb03fcba487ed52cf7a7823e8f7d8193a3a3b4d7c3a9032894f8b"
+    },
+    {
+      "id": "step-wood",
+      "name": "Шаги: дерево",
+      "role": "footsteps",
+      "file": "footsteps/step-wood.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "e0fa5e3981231777a7d238945dcbe7fcfe3b4f135ed4d995ccd647800e47c776"
+    },
+    {
+      "id": "step-snow",
+      "name": "Шаги: снег",
+      "role": "footsteps",
+      "file": "footsteps/step-snow.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "570958dd8a1eb97c0aa45432e8f2c9680e343d3dd5b170d38b793aa470926d25"
+    },
+    {
+      "id": "step-carpet",
+      "name": "Шаги: ковёр",
+      "role": "footsteps",
+      "file": "footsteps/step-carpet.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/impact-sounds",
+      "sha256": "d98b89b0bd733c3a4f0cd3df1d9c94568bccdb7f8f586f7c286692fb61452b79"
+    },
+    {
+      "id": "getup-cloth",
+      "name": "Шорох ткани",
+      "role": "getup",
+      "file": "getup/getup-cloth.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/rpg-audio",
+      "sha256": "dca8790d636184b1f172f2d16cfd989f42c137036ca55ceea13f2befbe7396a3"
+    },
+    {
+      "id": "getup-cloth-2",
+      "name": "Одежда",
+      "role": "getup",
+      "file": "getup/getup-cloth-2.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/rpg-audio",
+      "sha256": "735b7147ab52a5a172ff634976e34f7d6bd621f0c256dbb640c0686dc33e75ee"
+    },
+    {
+      "id": "getup-leather",
+      "name": "Кожа",
+      "role": "getup",
+      "file": "getup/getup-leather.mp3",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/rpg-audio",
+      "sha256": "4d317f828c937acb9090f4d03f9748ad5938da200990427778ce6b5cef67342b"
+    },
+    {
+      "id": "fall-phaser-1",
+      "name": "Свист падения",
+      "role": "falling",
+      "file": "falling/fall-phaser-1.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "488ac5c6720b09bf4cb0dc9de52e53d63ffa0d49e70679571a1f5cbd432be95d"
+    },
+    {
+      "id": "fall-phaser-2",
+      "name": "Падение вниз",
+      "role": "falling",
+      "file": "falling/fall-phaser-2.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "6ddd700b6c589585989b5cab0ab110b4a56b985585cffa097987679efcd0439e"
+    },
+    {
+      "id": "fall-high-down",
+      "name": "Тонкий спуск",
+      "role": "falling",
+      "file": "falling/fall-high-down.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/digital-audio",
+      "sha256": "0a975f776443dbc14dbf8723298595150b2e80d32de74b90cd48ec41ee5b10be"
+    },
+    {
+      "id": "ui-tick",
+      "name": "Тик",
+      "role": "ui",
+      "file": "ui/ui-tick.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "c420a1ab56ff3289c68c58b7484fa84a510e4eecadd5d8cee4789b45f57939cd"
+    },
+    {
+      "id": "ui-click",
+      "name": "Клик",
+      "role": "ui",
+      "file": "ui/ui-click.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "1a7a54a94b1d912159ef66b74c360b3095a3bdb02087715048d1b88a3bf15b68"
+    },
+    {
+      "id": "ui-select",
+      "name": "Выбор",
+      "role": "ui",
+      "file": "ui/ui-select.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "7efa927375d3f858d82ab85cc2669854ef5f4d4151f4c2dfd0d20adb8a7289d5"
+    },
+    {
+      "id": "ui-toggle",
+      "name": "Тумблер",
+      "role": "ui",
+      "file": "ui/ui-toggle.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "1dce6de68b6fa4bc9232b48a65d8fd26be62899060d3ab5caba7738b05b8ca1c"
+    },
+    {
+      "id": "ui-pluck",
+      "name": "Щипок",
+      "role": "ui",
+      "file": "ui/ui-pluck.ogg",
+      "license": "CC0-1.0",
+      "author": "Kenney (kenney.nl)",
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "sha256": "a0fdf78c7e822e7f7d123039f7e5b348bc97a5fb6fce9246255bfc8e2ab9d007"
+    }
+  ]
+}

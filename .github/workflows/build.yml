@@ -1,0 +1,147 @@
+name: build
+
+# Сборка Windows-версии, проверки, SHA-256 и отправка в VirusTotal.
+# PyInstaller не кроссплатформенный, поэтому Windows-артефакт собирается
+# только здесь.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Установить зависимости
+        run: python -m pip install -r requirements-build.txt
+
+      - name: Проверки движка каталога
+        run: python tests/test_cursor_library.py
+
+      - name: Проверки встроенной библиотеки
+        run: python tests/test_library.py
+
+      - name: Проверки наборов
+        run: python tests/test_respack.py
+
+      - name: Проверки профилей
+        run: python tests/test_profiles.py
+
+      - name: Проверки .rcur
+        run: python tests/test_rcur.py
+
+      - name: Проверки неба
+        run: python tests/test_skybox.py
+
+      - name: Генерация ресурсов
+        run: python tools/make_assets.py
+
+  build:
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Установить зависимости
+        run: python -m pip install -r requirements-build.txt
+
+      - name: Установить Inno Setup
+        # Обязательный шаг: build/build.py падает без ISCC.exe —
+        # установщик не «пропускается».
+        run: choco install innosetup --yes --no-progress
+
+      # Подпись в CI идёт через облачный сервис: приватный ключ нельзя
+      # выгружать, с 2023 года он обязан жить на FIPS-оборудовании.
+      # Токен хранится в секретах репозитория. Без него сборка идёт
+      # без подписи — это не повод падать.
+      - name: Настроить облачную подпись
+        if: env.SIGN_CLOUD_CMD != ''
+        run: |
+          Set-Content -Path sign-cloud.bat -Value "$env:SIGN_CLOUD_CMD"
+        env:
+          SIGN_CLOUD_CMD: ${{ secrets.SIGN_CLOUD_CMD }}
+
+      - name: Сборка
+        run: python build/build.py ${{ env.SIGN_CLOUD_CMD != '' && '--sign' || '--skip-assets' }}
+
+      - name: Отчёт о сборке
+        run: |
+          Get-Content dist\build.json
+          Get-Content dist\SHA256SUMS
+
+      - name: Отправить в VirusTotal
+        if: env.VIRUSTOTAL_API_KEY != ''
+        continue-on-error: true
+        env:
+          VT_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
+        run: |
+          # В VT идёт то, что запускает пользователь: установщик.
+          # Source zip прикладывается следом.
+          $files = @(Get-ChildItem dist/*Setup*.exe) + @(Get-ChildItem dist/*-src.zip)
+          foreach ($f in $files) {
+            if (-not $f) { continue }
+            & curl.exe -s -X POST "https://www.virustotal.com/api/v3/files" `
+                 -H "x-apikey: $env:VT_API_KEY" `
+                 -F "file=@$($f.FullName)" `
+                 -F "auto_submit=1"
+          }
+
+      - name: Приложить артефакты
+        uses: actions/upload-artifact@v4
+        with:
+          name: sanyakiller111-windows-x64
+          path: |
+            dist/*.zip
+            dist/*Setup*.exe
+            dist/SHA256SUMS
+            dist/build.json
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Скачать артефакты
+        uses: actions/download-artifact@v4
+        with:
+          name: sanyakiller111-windows-x64
+          path: dist
+
+      - name: Опубликовать в релизе
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*
+          body: |
+            ## Проверка
+
+            SHA-256 каждого файла — в `SHA256SUMS`, подробности сборки — в `build.json`.
+
+            ```
+            sha256sum -c SHA256SUMS
+            ```
+
+            Исходный код открыт: собрать и сравнить хеш можно самому.
+            Разбор того, что приложение делает с файлами, — в `docs/SECURITY.md`.
+
+            ## Отчёт VirusTotal
+
+            Ссылка добавляется в релиз после загрузки сборки.

@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "license": "OFL-1.1",
+  "items": [
+    {
+      "id": "rubik",
+      "name": "Rubik",
+      "files": {
+        "regular": "rubik-regular.ttf",
+        "bold": "rubik-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Rubik Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Rubik",
+      "sha256": {
+        "regular": "f00ee2cdfff8361ba75a54e07a1e97fc9db77dd1b6d39117aec75806b748df13",
+        "bold": "fcc123ade13103e1c91282ae10c401b1204f721bdfe24648103137927b1c0e96"
+      }
+    },
+    {
+      "id": "montserrat",
+      "name": "Montserrat",
+      "files": {
+        "regular": "montserrat-regular.ttf",
+        "bold": "montserrat-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Montserrat.Git Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Montserrat",
+      "sha256": {
+        "regular": "3b80b9c3718f8dcb7f3f1d8a7b2b94d52f3864f048ad67591be8ff4a158dc23c",
+        "bold": "78f0702a4e8ac1e009b0af5a0ddbe6f1f012baa15f3d83293769301f8e474558"
+      }
+    },
+    {
+      "id": "nunito",
+      "name": "Nunito",
+      "files": {
+        "regular": "nunito-regular.ttf",
+        "bold": "nunito-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Nunito Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Nunito",
+      "sha256": {
+        "regular": "4b69f06ca6792a8c21dd1f0bd9d9ac779ae54b8e27fee5bd7e7aa673880e5079",
+        "bold": "2253832ea53ddc66519214aefcf8a71d63287dae735fc00a51db69f8cd155880"
+      }
+    },
+    {
+      "id": "exo2",
+      "name": "Exo 2",
+      "files": {
+        "regular": "exo2-regular.ttf",
+        "bold": "exo2-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Exo 2 Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Exo+2",
+      "sha256": {
+        "regular": "8a1bfc22dab6b100b00f6d79de40800608b02e5c072b773a0abf7ff24071e756",
+        "bold": "1da7e295e66ac5e360ab2debae47baef5e744f0fdaec5c1c7658d89e9cfd2696"
+      }
+    },
+    {
+      "id": "manrope",
+      "name": "Manrope",
+      "files": {
+        "regular": "manrope-regular.ttf",
+        "bold": "manrope-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Manrope Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Manrope",
+      "sha256": {
+        "regular": "2792742df0621405a3628e52af449f7b4466c77548f6c1f6fbbf99d445a071da",
+        "bold": "71b42e9851540d2c9290c38dc9caf1b3789164dc92f251726d1a8efff256c191"
+      }
+    },
+    {
+      "id": "jetbrains-mono",
+      "name": "JetBrains Mono",
+      "files": {
+        "regular": "jetbrains-mono-regular.ttf",
+        "bold": "jetbrains-mono-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The JetBrains Mono Project Authors",
+      "source_url": "https://fonts.google.com/specimen/JetBrains+Mono",
+      "sha256": {
+        "regular": "51e9b52f2a3359b8ee167e0fb075d0b1ed7dd7930c068e933621422b1e1bba9d",
+        "bold": "d0dd1e00748512e6d93237268eec241bf6b8f1fadc512a9556834cc74db60ff8"
+      }
+    },
+    {
+      "id": "unbounded",
+      "name": "Unbounded",
+      "files": {
+        "regular": "unbounded-regular.ttf",
+        "bold": "unbounded-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Unbounded Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Unbounded",
+      "sha256": {
+        "regular": "69164b06b693162ba1951b3c57e98c1483dad0618ba44af757cf7636415942b5",
+        "bold": "e3e616ffdf1d7c916861512e366f3d7d41a335d4794a7ce61fd9ea2b7ecf07bd"
+      }
+    },
+    {
+      "id": "inter",
+      "name": "Inter",
+      "files": {
+        "regular": "inter-regular.ttf",
+        "bold": "inter-bold.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Inter Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Inter",
+      "sha256": {
+        "regular": "78026ed55899c2cf7276676255a9bb4ec40fa4a7513be6ea401069879dc127ee",
+        "bold": "d592b24ccaf3c7ac675d1cecc58c220989e094c08551c946f17a05be7cf7d697"
+      }
+    },
+    {
+      "id": "press-start-2p",
+      "name": "Press Start 2P",
+      "files": {
+        "regular": "press-start-2p-regular.ttf",
+        "bold": "press-start-2p-regular.ttf"
+      },
+      "license": "OFL-1.1",
+      "author": "The Press Start 2P Project Authors",
+      "source_url": "https://fonts.google.com/specimen/Press+Start+2P",
+      "sha256": {
+        "regular": "034c77f1f05ec89421e4a63f0e3a4ca1ecf852cc6d2bf611f126f275728e017d",
+        "bold": "034c77f1f05ec89421e4a63f0e3a4ca1ecf852cc6d2bf611f126f275728e017d"
+      }
+    }
+  ]
+}
