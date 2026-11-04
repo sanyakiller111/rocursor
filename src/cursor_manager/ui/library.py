@@ -19,7 +19,7 @@ from pathlib import Path, PurePosixPath
 
 from PIL import Image
 from PySide6.QtCore import Qt, QTimer, QUrl, Signal
-from PySide6.QtGui import QImage, QPixmap
+from PySide6.QtGui import QImage, QPainter, QPixmap
 from PySide6.QtWidgets import (
     QApplication, QFileDialog, QFrame, QGridLayout, QHBoxLayout,
     QInputDialog, QLabel, QLineEdit, QMessageBox, QPushButton, QScrollArea,
@@ -166,6 +166,23 @@ def slot_key(kind: str, entry) -> str:
     return kind
 
 
+class _ElidedLabel(QLabel):
+    """Подпись карточки: длинное имя кончается «…», а не обрезком буквы."""
+
+    def minimumSizeHint(self):
+        hint = super().minimumSizeHint()
+        hint.setWidth(0)
+        return hint
+
+    def paintEvent(self, event) -> None:
+        p = QPainter(self)
+        rect = self.contentsRect()
+        text = self.fontMetrics().elidedText(self.text(), Qt.ElideRight, rect.width())
+        p.setPen(self.palette().color(self.foregroundRole()))
+        p.setFont(self.font())
+        p.drawText(rect, Qt.AlignLeft | Qt.AlignVCenter, text)
+
+
 class Card(QFrame):
     """Карточка сетки без рамки: плитка с картинкой, имя, подпись. Клик выбирает."""
     clicked = Signal()
@@ -193,12 +210,12 @@ class Card(QFrame):
             tile.setText("?")
         lay.addWidget(tile)
         lay.addSpacing(10)
-        self.name = QLabel(name)
+        self.name = _ElidedLabel(name)
         self.name.setObjectName("cardname")
         self.name.setContentsMargins(2, 0, 2, 0)
         lay.addWidget(self.name)
         lay.addSpacing(2)
-        self.caption = QLabel(caption)
+        self.caption = _ElidedLabel(caption)
         self.caption.setObjectName("cardcap")
         self.caption.setContentsMargins(2, 0, 2, 0)
         lay.addWidget(self.caption)
@@ -733,7 +750,8 @@ class LibraryPage(QWidget):
         else:
             tags = [str(entry.get("license") or "CC0-1.0"),
                     str(entry.get("author") or "")]
-        tag_line = " · ".join(t for t in tags if t)
+        # UNKNOWN — служебная пометка лицензии для установки, не для глаз
+        tag_line = " · ".join(t for t in tags if t and t != "UNKNOWN")
         self.p_tags.setText(tag_line)
         self.p_tags.setVisible(bool(tag_line))
         self.p_info.setText(self._kind_hint())
